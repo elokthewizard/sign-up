@@ -1,3 +1,20 @@
-.graphic{
-    background-color: aqua;
+body{
+    display: flex;
+}
+
+.graphics{
+    height: 100vh;
+    border: solid red;
+    background-image: url('/bg.jpg');
+    width: 33%;
+}
+
+.logo{
+    position: absolute;
+    text-align: center;
+}
+
+.photo-cred{
+    position: absolute;
+    bottom: 0;
 }
