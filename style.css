@@ -56,7 +56,6 @@ main{
     flex-direction: column;
     justify-content: space-between;
     background-color: rgb(160, 212, 230);
-    
 }
 
 .info-card{
@@ -117,7 +116,7 @@ input{
     padding: 8px;
     width: 200px;
     margin-bottom: 10px;
-
+    border-radius: 8px;
 }
 
 input :userinvalid{
