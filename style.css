@@ -58,7 +58,8 @@ form{
 }
 
 legend{
-    display: block;
+    display: flex;
+    
 }
 
 .input-parent{
@@ -67,7 +68,7 @@ legend{
 
 input{
     width: 200px;
-    margin: 0 25px;
+    margin: 0 25px 10px;
     border: solid;
 }
 
@@ -77,8 +78,14 @@ input :userinvalid{
 
 input:focus-visible{
     appearance: none;
+    border: solid blue;
 }
 
 .finalize{
     height: 33%;
+    flex-direction: row;
+}
+
+.existing-user{
+    margin: 0 25px;
 }
