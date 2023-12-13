@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
 </head>
 <body>
     <div class="graphics">
@@ -12,14 +13,18 @@
             <div class="banner">
                 <h1 class="logo">FTB</h1>
             </div>
-            <p class="photo-cred">Photo by <a href="https://unsplash.com/@jkopf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Johannes Kopf</a> on <a href="https://unsplash.com/photos/an-aerial-view-of-a-body-of-water-H7RNECk9OR4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            <div id="credit">
+                <p class="photo-cred">Photo by <a href="https://unsplash.com/@jkopf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Johannes Kopf</a> on <a href="https://unsplash.com/photos/an-aerial-view-of-a-body-of-water-H7RNECk9OR4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </div>
         </div>
     </div>
 
     <main>
         <div class="info-card">Here is a little card explaining a little bit about what we're signing up for. why not give it a shot?</div>
         <form id="sign-up" action="#" method="dialog">
-            <legend>Let's a go!</legend>
+            <div class="form-title">
+                <legend>Let's a go!</legend>
+            </div>
             <div class="input-parent">
                 <div class="option-child">
                     <label for="fname">First Name:</label>
@@ -46,7 +51,7 @@
         </form>
         <div class="finalize">
             <input type="submit" form="sign-up" value="Sign up">
-            <p class="existing-user">Already have an account? <a href="#s">Sign in</a></p>
+            <p class="sign-in-msg">Already have an account? <a href="#s">Sign in</a></p>
         </div>
     </main>
 </body>
