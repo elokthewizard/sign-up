@@ -4,9 +4,8 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    background-color: #fbfbfb;
 }
 
 .graphics{
@@ -26,6 +25,7 @@ body{
 
 .logo{
     font-size: 8rem;
+    font-weight: bold;
     font-style: italic;
     color: #fbfbfb;
     text-shadow: 4px 8px 2px black;
@@ -51,10 +51,12 @@ main{
     height: 100%;
     width: 50%;
     max-width: 600px;
+    min-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    background-color: rgb(160, 212, 230);
+    
 }
 
 .info-card{
@@ -73,7 +75,7 @@ form{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #fbfbfb;
     margin: auto 0;
     width: 100%;
     gap: 20px;
@@ -106,7 +108,7 @@ form{
 label{
     display: block;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: .8rem;
     margin: 5px 0;
     color: gray;
 }
@@ -131,7 +133,7 @@ input:focus-visible{
     display: flex;
     height: 33%;
     flex-direction: column;
-    padding-left: 50px;
+    padding-right: 50px;
 }
 
 input[type='submit']{
@@ -139,16 +141,16 @@ input[type='submit']{
     height: 3rem;
     font-size: 1rem;
     margin-top: 25px;
-    align-self: flex-start;
+    align-self: flex-end;
     font-style: italic;
     font-weight: bold;
+    background-color: #fbfbfb;
+    border-radius: 25px;
 }
 
 .sign-in-msg{
-    display: block;
-    align-self: flex-start;
-    color: gray;
-    text-decoration: none;
-    margin-top: -1.5px;
-    font-size: .82rem;
+    align-self: flex-end;
+    margin-top: -2px;
+    font-size: .75rem;
+    padding-right: 8px;
 }
