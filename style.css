@@ -1,26 +1,27 @@
 body{
     display: flex;
-    box-sizing: border-box;
     position: relative;
     width: 50vw;
+    height: 100vh;
     margin: 0 auto;
     font-family: 'roboto', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 
 
 .graphics{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 400px;
     position: relative;
-
+    box-sizing: border-box;
 }
 
 .photo-bg{
     background-image: url('bg.jpg');
     background-position: center;
-    height: 100vh;
+    height: 100%;
     flex-basis: 1;
 }
 
@@ -51,11 +52,11 @@ body{
 }
 
 main{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    height: 100vh;
+    box-sizing: border-box;
 }
 
 .info-card{
@@ -121,16 +122,18 @@ input:focus-visible{
     height: 33%;
     flex-direction: column;
     margin-left: 25px;
-    justify-content: space-between;
+
 }
 
 input[type='submit']{
     width: 200px;
     height: 3rem;
     margin-top: 25px;
+    align-self: flex-start;
 }
 
 .sign-in-msg{
     display: block;
-    padding-bottom: 500px;
+    align-self: flex-start;
+
 }
