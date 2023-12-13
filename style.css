@@ -4,36 +4,50 @@ body{
     position: relative;
     width: 50vw;
     margin: 0 auto;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
 
+
+
 .graphics{
+    display: flex;
     height: 100vh;
-    border: solid red;
     width: 400px;
-    min-width: 33%;
+    position: relative;
+
 }
 
 .photo-bg{
     background-image: url('bg.jpg');
     background-position: center;
-    height: inherit;
-    border: solid seagreen;
-}
-
-.banner{
-    text-align: center;
-    color: black;
-    width: auto;
-    background: rgba(0, 0, 0, 0.25);
+    height: 100vh;
+    flex-basis: 1;
 }
 
 .logo{
     font-size: xxx-large;
 }
 
-.photo-cred{
+.banner{
+    text-align: center;
+    color: black;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+#credit{
     position: absolute;
     bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: .65rem;
+    text-align: center;
+}
+
+.photo-cred{
+    width: auto;
+    align-items: flex-end;
 }
 
 main{
@@ -46,8 +60,11 @@ main{
 .info-card{
     height: 33%;
     display: flex;
-
+    padding: 50px;
     align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 form{
@@ -56,16 +73,21 @@ form{
     height: 33%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    padding-left: 25px;
 }
 
-legend{
+.form-title{
     display: flex;
+    text-align: center;;
+    border: solid;
     
 }
 
 .input-parent{
     display: flex;
+    justify-content: space-between;
+    margin: 0 0 25px 0;
 }
 
 input{
@@ -84,10 +106,18 @@ input:focus-visible{
 }
 
 .finalize{
+    display: flex;
     height: 33%;
     flex-direction: row;
+    padding-left: 25px;
+    justify-content: space-between;
 }
 
-.existing-user{
-    margin: 0 25px;
+input[type='submit']{
+    width: 100px;
+    height: 3rem;
+}
+
+.sign-in-msg{
+    margin: 0 75px;
 }
