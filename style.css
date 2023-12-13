@@ -1,54 +1,50 @@
 body{
     display: flex;
     position: relative;
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
     font-family: 'roboto', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    background-color: #faf9fa;
 }
-
-
 
 .graphics{
     display: flex;
     height: 100%;
-    width: 400px;
+    width: 50%;
     position: relative;
-    box-sizing: border-box;
 }
 
 .photo-bg{
     background-image: url('bg.jpg');
     background-position: center;
     height: 100%;
+    width: 100%;
     flex-basis: 1;
 }
 
 .logo{
-    font-size: xxx-large;
+    font-size: 8rem;
+    font-style: italic;
+    color: #faf9fa;
+    text-shadow: 4px 8px 2px black;
 }
 
 .banner{
     text-align: center;
     color: black;
-    width: 400px;
-    background: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #credit{
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.25);
     font-size: .65rem;
     text-align: center;
-}
-
-.photo-cred{
-    width: auto;
-    align-items: flex-end;
 }
 
 main{
@@ -56,35 +52,37 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
+
 }
 
 .info-card{
-    height: 33%;
     display: flex;
-    padding: 50px;
-    align-items: center;
+    flex-direction: column;
     font-size: x-large;
     font-weight: bolder;
     font-style: italic;
+    padding: 0 35px;
+    gap: 32px;
+    height: 33%;
+    justify-content: center;
 }
 
 form{
     box-sizing: border-box;
-    background-color: rgba(63, 119, 119, 0.541);
-    width: 600px;
+    background-color: #fff;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 2px;
     gap: 20px;
+    box-shadow: 5px 5px;
+    position: relative;
 }
 
 .form-title{
     display: flex;
-    text-align: center;;
-    border: solid;
-    font-size: x-large;
+    font-size: 2.5rem;
     font-weight: 800;
     padding: 8px;
 }
@@ -92,13 +90,22 @@ form{
 .input-parent{
     display: flex;
     justify-content: space-between;
+    max-width: 600px;
     padding: 8px;
+    margin: 0 auto;
+    margin-left: 25px;
+}
+
+.input-child{
+    margin-right: 30px;
 }
 
 label{
     display: block;
     font-weight: bold;
+    font-size: .9rem;
     padding: 4px;
+    color: gray;
 }
 
 input{
@@ -121,8 +128,7 @@ input:focus-visible{
     display: flex;
     height: 33%;
     flex-direction: column;
-    margin-left: 25px;
-
+    padding-left: 50px;
 }
 
 input[type='submit']{
@@ -130,10 +136,14 @@ input[type='submit']{
     height: 3rem;
     margin-top: 25px;
     align-self: flex-start;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .sign-in-msg{
     display: block;
     align-self: flex-start;
+    color: gray;
+    text-decoration: none;
 
 }
