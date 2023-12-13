@@ -54,7 +54,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid;
+
+    height: 100vh;
 }
 
 .info-card{
@@ -68,32 +69,42 @@ main{
 }
 
 form{
-    background-color: azure;
+    box-sizing: border-box;
+    background-color: rgba(63, 119, 119, 0.541);
     width: 600px;
-    height: 33%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 25px;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
 }
 
 .form-title{
     display: flex;
     text-align: center;;
     border: solid;
-    
+    font-size: x-large;
+    font-weight: 800;
+    padding: 8px;
 }
 
 .input-parent{
     display: flex;
     justify-content: space-between;
-    margin: 0 0 25px 0;
+    padding: 8px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    padding: 4px;
 }
 
 input{
+    padding: 8px;
     width: 200px;
-    margin: 0 25px 10px;
-    border: solid;
+    margin-bottom: 10px;
+
 }
 
 input :userinvalid{
@@ -108,16 +119,18 @@ input:focus-visible{
 .finalize{
     display: flex;
     height: 33%;
-    flex-direction: row;
-    padding-left: 25px;
+    flex-direction: column;
+    margin-left: 25px;
     justify-content: space-between;
 }
 
 input[type='submit']{
-    width: 100px;
+    width: 200px;
     height: 3rem;
+    margin-top: 25px;
 }
 
 .sign-in-msg{
-    margin: 0 75px;
+    display: block;
+    padding-bottom: 500px;
 }
