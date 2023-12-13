@@ -1,5 +1,7 @@
 body{
     display: flex;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .graphics{
@@ -16,11 +18,15 @@ body{
     border: solid seagreen;
 }
 
-.logo{
+.banner{
     text-align: center;
-    background-color: black;
-    position: absolute;
-    justify-content: center;
+    color: black;
+    width: auto;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.logo{
+    font-size: xxx-large;
 }
 
 .photo-cred{
@@ -28,7 +34,7 @@ body{
     bottom: 0;
 }
 
-.content{
+main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,25 +42,27 @@ body{
 }
 
 .info-card{
-    background-color: azure;
+    height: 33%;
+    display: flex;
+
     align-items: center;
 }
 
 form{
     background-color: azure;
     width: 600px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.option-child{
+    height: 33%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-label{
-    font-size: 0.75rem;
+legend{
+    display: block;
+}
+
+.input-parent{
+    display: flex;
 }
 
 input{
@@ -65,4 +73,12 @@ input{
 
 input :userinvalid{
     border: solid red;
+}
+
+input:focus-visible{
+    appearance: none;
+}
+
+.finalize{
+    height: 33%;
 }
