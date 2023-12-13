@@ -15,28 +15,34 @@
         </p>
     </div>
     <div class="content">
-        <p class="info">Here is a little card explainging a little bit about what we're signing up for. why not give it a shot?</p>
-        <form action="">
+        <p class="info">Here is a little card explaining a little bit about what we're signing up for. why not give it a shot?</p>
+        <form id="sign-up" action="#" method="dialog">
             <legend>Let's a go!</legend>
-            <label for="fname">First Name:</label>
-            <input type="text" name="fname" id="fname">
+            <div class="option-child">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname">
 
-            <label for="lname">Last Name:</label>
-            <input type="text" name="lname" id="lname">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname">
 
-            <label for="email">Email:</label>
-            <input type="email" name="mail" id="email">
+                <label for="email">Email:</label>
+                <input type="email" name="mail" id="email">
+           </div>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" name="pnumber" id="phone">
+            <div class="option-child">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="pnumber" id="phone">
 
-            <label for="password">Password:</label>
-            <input type="password" name="upass" id="password">
+                <label for="password">Password:</label>
+                <input type="password" name="upass" id="password">
 
-            <label for="confpassword">Confirm Password:</label>
-            <input type="password" name="upassredux" id="confpassword">
+                <label for="confpassword">Confirm Password:</label>
+                <input type="password" name="upassredux" id="confpassword">
+            </div>
         </form>
-        <div class="controls"></div>
+        <div class="controls">
+            <input type="submit" form="sign-up" value="Sign up">
+        </div>
     </div>
 </body>
 </html>
