@@ -5,13 +5,22 @@ body{
 .graphics{
     height: 100vh;
     border: solid red;
+    width: 400px;
+    min-width: 33%;
+}
+
+.photo-bg{
     background-image: url('/bg.jpg');
-    width: 33%;
+    background-position: center;
+    height: inherit;
+    border: solid seagreen;
 }
 
 .logo{
-    position: absolute;
     text-align: center;
+    background-color: black;
+    position: absolute;
+    justify-content: center;
 }
 
 .photo-cred{
@@ -20,7 +29,15 @@ body{
 }
 
 .content{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    border: solid;
+}
+
+.info-card{
+    background-color: azure;
+    align-items: center;
 }
 
 form{
@@ -31,11 +48,21 @@ form{
     flex-wrap: wrap;
 }
 
+.option-child{
+    display: flex;
+    flex-direction: column;
+}
+
 label{
     font-size: 0.75rem;
 }
 
 input{
     width: 200px;
+    margin: 0 25px;
     border: solid;
+}
+
+input :userinvalid{
+    border: solid red;
 }
